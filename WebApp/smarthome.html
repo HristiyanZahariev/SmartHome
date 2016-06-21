@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>ESP8266 LED Control</title>
+		<link rel="stylesheet" href="css/layout.css" type="text/css">
+		<script type="text/javascript" src="js/javascript.js" ></script>
+		<script src="jquery.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<p class="welcome_message"> Smart Home </p>
+		<div class="information">
+			<p>Here you can use your devices remotely.<br>
+			You just have to add your ESP IP address</p>
+		</div>
+
+		<div class="pins">
+			<p id="state"> Power it up </p>
+			<button id="13" class="led" value="off" onclick="change(this.id)">On</button>
+		</div>
+
+
+		<div class="set_ip">
+			<span> Enter the IP address</span>
+			<input type="text" id="espIp"/>
+			<input type="button" class="btn btn-default" onclick="getIp();" value="Submit"/>
+		</div>
+	</body>
+</html>
